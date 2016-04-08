@@ -71,8 +71,12 @@
 
 		$(document).foundation();
 		var swiper = new Swiper('.swiper-container', {
-			pagination : '.swiper-pagination',
-			paginationClickable : true
+	        pagination: '.swiper-pagination',
+	        paginationClickable: true,
+	        spaceBetween: 30,
+	        centeredSlides: true,
+	        autoplay: 5500,
+	        autoplayDisableOnInteraction: false
 		});
 		
 		$(document).ready(function(){

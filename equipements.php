@@ -13,7 +13,7 @@
 		<div class="large-12 columns">
 			
 			<h1>
-				Les Références<br/>
+				Les Equipements<br/>
 				ESC'Alinox
 			</h1>
 			

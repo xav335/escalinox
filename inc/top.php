@@ -14,7 +14,7 @@
 				<li><a href="/">Accueil</a></li>
 				<li><a href="realisations.php">Réalisations</a></li>
 				<li><a href="actualites.php">Actualités</a></li>
-				<li><a href="references.php">Références</a></li>
+				<li><a href="equipements.php">Equipements</a></li>
 				<li><a href="certifications.php">Certifications</a></li>
 				<li><a href="contact.php">Contact</a></li>
 			</ul>
