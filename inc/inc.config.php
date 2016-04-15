@@ -45,7 +45,7 @@
 	
 	define( "MAILCUSTOMER", 	"xxx" );
 	define( "MAILNAMECUSTOMER", "ESC Alinox" );
-	define( "URLSITEDEFAULT", 	"http://www.xxx.com/" );
+	define( "URLSITEDEFAULT", 	"http://www.escalinox.com/" );
 	define( "FACEBOOK_LINK", 	"https://www.facebook.com/#" );
 	define( "DAILYMOTION_LINK", "#" );
 	

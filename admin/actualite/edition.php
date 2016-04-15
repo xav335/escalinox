@@ -25,8 +25,8 @@
 			for ( $i=1; $i<2; $i++ ) {
 				$image[ $i ] = $result[ 0 ][ "image" . $i ];
 				
-				if(empty( $image[ $i ] ) || !isset( $image[ $i ] ) ) {
-					$img[ $i ] = 	"/img/actualite-defaut.jpg";
+				if ( empty( $image[ $i ] ) || !isset( $image[ $i ] ) ) {
+					$img[ $i ] = 	"/img/homeactu.jpg";
 					$imgval[ $i ] = '';
 				} 
 				else {
@@ -46,7 +46,7 @@
 		$contenu= 			null;
 		$online = 			null;
 		for ( $i=1; $i<2; $i++ ) {
-			$img[ $i ] = 	'/img/actualite-defaut.jpg';
+			$img[ $i ] = 	'/img/homeactu.jpg';
 			$imgval[ $i ] = '';
 		}
 	}
@@ -200,7 +200,7 @@
 			}
 			
 			function clearImage(idImage){
-				$( '#customRoxyImage' + idImage ).attr( "src", "/img/actualite-defaut.jpg" );
+				$( '#customRoxyImage' + idImage ).attr( "src", "/img/homeactu.jpg" );
 				$( '#url' + idImage ).val( '' );
 			}
 			

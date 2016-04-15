@@ -15,9 +15,10 @@
 			<div id="map-canvas"></div>
 		</div>
 		<div class="large-12 columns">
-			<form action="" method="post">
-				<input type="email" name="newsletter" value="" placeholder="Abonnez-vous à la newsletter, saisissez votre e-mail" /><button>OK</button>
-				<a href="#" class="facebook" title="Suivez-nous sur Facebook"></a>
+			<form id="form_news" action="" method="post">
+				<input type="hidden" name="as" value="" />
+				<input type="email" name="email_news" id="email_news" value="" placeholder="Abonnez-vous à la newsletter, saisissez votre e-mail" /><button>OK</button>
+				<a href="<?=FACEBOOK_LINK?>" target="_blank" class="facebook" title="Suivez-nous sur Facebook"></a>
 			</form>
 		</div>
 	</div>

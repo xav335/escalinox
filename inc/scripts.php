@@ -92,6 +92,40 @@
 					}
 				}
 			});
+			
+			// ---- Validation du formulaire de newsletter -------------- //
+			if ( 1 == 1 ) {
+				
+				$( "#form_news" ).submit(function() {
+					//alert( "validation..." );
+					var erreur = 0;
+					
+					$.ajax({
+						type: "POST",
+						cache: false,
+						url: '/ajax/ajax_newsletter.php?task=inscrire',
+						data: $( "#form_news" ).serialize(),
+						error: function() { alert( "Une erreur s'est produite..." ); },
+						success: function( data ){
+							var obj = $.parseJSON( data );
+							
+							// Tout s'est bien passé!
+							if ( !obj.error ) {
+								$( "#form_news #email_news" ).val( '' );
+								alert( "Votre e-mail a été correctement ajouté à notre base de données." );
+							}
+							else {
+								
+							}
+							
+						}
+					});
+					
+					return false;
+				});
+			}
+			// ---------------------------------------------------------- //
+			
 		});
 		
 	</script>

@@ -11,21 +11,10 @@
                 	<div class="col-md-6 collapse navbar-collapse">
 	           			<ul class="nav navbar-nav">
 	           				<li class="dropdown">
-					          	<a href="/admin/soin_categorie/liste.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Nos soins<span class="caret"></span></a>
+					          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Réalisations<span class="caret"></span></a>
 					          	<ul class="dropdown-menu" role="menu">
-					            	<li><a href="/admin/soin_categorie/liste.php">Catégories</a></li>
-					          		<li class="divider"></li>
-					            	<li><a href="/admin/soin/edition.php">Ajout Produits</a></li>
-					            	<li><a href="/admin/soin/liste.php">Modif / Suppr</a></li>
-					          	</ul>
-					        </li>
-	           				<li class="dropdown">
-					          	<a href="/admin/tarif_categorie/liste.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Nos tarifs<span class="caret"></span></a>
-					          	<ul class="dropdown-menu" role="menu">
-					            	<li><a href="/admin/tarif_categorie/liste.php">Catégories</a></li>
-					          		<li class="divider"></li>
-					            	<li><a href="/admin/tarif/edition.php">Ajout Tarifs</a></li>
-					            	<li><a href="/admin/tarif/liste.php">Modif / Suppr</a></li>
+					            	<li><a href="/admin/reference/edition.php">Ajout Réalisation</a></li>
+					            	<li><a href="/admin/reference/liste.php">Modif / Suppr</a></li>
 					          	</ul>
 					        </li>
 	           				<li class="dropdown">

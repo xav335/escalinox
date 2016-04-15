@@ -1,121 +1,84 @@
+<?
+	include_once ( $_SERVER[ "DOCUMENT_ROOT" ] . "/admin/classes/utils.php" );
+	require( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/inc.config.php" );
+	require $_SERVER[ "DOCUMENT_ROOT" ] . "/admin/classes/Reference.php";
+	require $_SERVER[ "DOCUMENT_ROOT" ] . "/admin/classes/Reference_image.php";
+	
+	$debug = false;
+	$reference = new Reference();
+	$reference_image = new Reference_image();
+	
+	// ---- Liste des références ------------------ //
+	if ( 1 == 1 ) {
+		unset( $recherche );
+		$recherche[ "online" ] = '1';
+		$liste_reference = $reference->getListe( $recherche, $debug );
+	}
+	// -------------------------------------------- //
+	
+	//print_pre( $liste_reference );
+?>
+
 <!doctype html>
 <html class="no-js" lang="fr">
 	<head>
 		<title>Quelques réalisations ESC'Alinox</title>
-		<?php include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/header.php" ); ?>
+		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/header.php" ); ?>
 	</head>
-<body class="page">
-
-<?php include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/top.php" ); ?>
+	<body class="page">
 	
-	<div class="row contenu">
+		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/top.php" ); ?>
+		
+		<div class="row contenu">
+			<h1>
+				Quelques réalisations<br/>
+				ESC'Alinox
+			</h1>
 			
-		<h1>
-			Quelques réalisations<br/>
-			ESC'Alinox
-		</h1>
-			
-		<!--
-		<ul class="tabs" data-tab>
-			<li class="tab-title active"><a href="#panel1">Onglet 1</a></li>
-			<li class="tab-title"><a href="#panel2">Onglet 2</a></li>
-		</ul>
-		-->
-		<div class="tabs-content">
-			<div class="content active" id="panel1">
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/01.jpg" data-fancybox-group="realisations" title=""><img src="photos/01s.jpg" alt="" /></a>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/02.jpg" data-fancybox-group="realisations" title=""><img src="photos/02s.jpg" alt="" /></a>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/03.jpg" data-fancybox-group="realisations" title=""><img src="photos/03s.jpg" alt="" /></a>
-				</div>
-		
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/04.jpg" data-fancybox-group="realisations" title=""><img src="photos/04s.jpg" alt="" /></a>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/05.jpg" data-fancybox-group="realisations" title=""><img src="photos/05s.jpg" alt="" /></a>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/06.jpg" data-fancybox-group="realisations" title=""><img src="photos/06s.jpg" alt="" /></a>
-				</div>
-		
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/07.jpg" data-fancybox-group="realisations" title=""><img src="photos/07s.jpg" alt="" /></a>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/08.jpg" data-fancybox-group="realisations" title=""><img src="photos/08s.jpg" alt="" /></a>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/09.jpg" data-fancybox-group="realisations" title=""><img src="photos/09s.jpg" alt="" /></a>
-				</div>
-		
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/10.jpg" data-fancybox-group="realisations" title=""><img src="photos/10s.jpg" alt="" /></a>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/11.jpg" data-fancybox-group="realisations" title=""><img src="photos/11s.jpg" alt="" /></a>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/12.jpg" data-fancybox-group="realisations" title=""><img src="photos/12s.jpg" alt="" /></a>
-				</div>
-		
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/13.jpg" data-fancybox-group="realisations" title=""><img src="photos/13s.jpg" alt="" /></a>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/14.jpg" data-fancybox-group="realisations" title=""><img src="photos/14s.jpg" alt="" /></a>
-				</div>
-			</div>
-			<!--
-			<div class="content" id="panel2">
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/02.jpg" data-fancybox-group="realisations" title=""><img src="photos/02s.jpg" alt="" /></a>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/02.jpg" data-fancybox-group="realisations" title=""><img src="photos/02s.jpg" alt="" /></a>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/02.jpg" data-fancybox-group="realisations" title=""><img src="photos/02s.jpg" alt="" /></a>
-				</div>
-		
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/02.jpg" data-fancybox-group="realisations" title=""><img src="photos/02s.jpg" alt="" /></a>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/02.jpg" data-fancybox-group="realisations" title=""><img src="photos/02s.jpg" alt="" /></a>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/02.jpg" data-fancybox-group="realisations" title=""><img src="photos/02s.jpg" alt="" /></a>
-				</div>
-		
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/02.jpg" data-fancybox-group="realisations" title=""><img src="photos/02s.jpg" alt="" /></a>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/02.jpg" data-fancybox-group="realisations" title=""><img src="photos/02s.jpg" alt="" /></a>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<a class="photos fancybox" href="photos/02.jpg" data-fancybox-group="realisations" title=""><img src="photos/02s.jpg" alt="" /></a>
-				</div>
-			</div>
-			-->
+			<?
+			// ---- Affichage des réalisations -------------- //
+			if ( !empty( $liste_reference ) ) {
+				$cpt = 1;
+				
+				echo "<div class='tabs-content'>\n";
+				echo "	<div class='content active' id='panel1'>\n";
+				
+				foreach( $liste_reference as $_reference ) {
+					//print_pre( $_reference );
+					$id = $_reference[ "id" ];
+					$titre = $_reference[ "titre_accueil" ];
+					$image_defaut = $reference_image->getImageDefaut( $id, "accueil", $debug );
+					
+					echo "<div class='large-4 medium-4 small-12 columns' style='margin-bottom:20px;'>\n";
+					echo "	<center><h3>" . $titre . "</h3></center>\n";
+					echo "	<a href='/realisation_detail.php?id=" . $id . "'><img src='" . $image_defaut . "' alt=\"" . $titre . "\" /></a>\n";
+					echo "</div>\n";
+					
+					$cpt++;
+					if ( $cpt >= 4 ) {
+						echo "<div style='clear:both;'></div>\n";
+						$cpt = 1;
+					}
+				}
+				
+				echo "	</div>\n";
+				echo "</div>\n";
+			}
+			// ---------------------------------------------- //
+			?>
+					
 		</div>
 		
-	</div>
-	
-<?php include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/footer.php" ); ?>
-
-<?php include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/scripts.php" ); ?>
-	
-	<script>
-		$(document).ready(function(){
-			$('.menu li:nth-child(2)').addClass('active');
-		});
-	</script>
-	
-</body>
+		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/footer.php" ); ?>
+		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/scripts.php" ); ?>
+		
+		<script>
+			
+			$(document).ready(function(){
+				$('.menu li:nth-child(2)').addClass('active');
+			});
+			
+		</script>
+		
+	</body>
 </html>

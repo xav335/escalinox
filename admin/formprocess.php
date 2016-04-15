@@ -4,7 +4,6 @@
 	require 'classes/News.php';
 	require 'classes/Contact.php';
 	require 'classes/Goldbook.php';
-	require 'classes/Planning.php';
 	require 'classes/ImageManager.php';
 	require 'classes/utils.php';
 	session_start();
@@ -237,11 +236,11 @@
 					// ---- Image
 					$destination = $_SERVER[ "DOCUMENT_ROOT" ] . '/photos/news' . $filenameDest;
 					if ( $debug ) echo "Destination : " . $destination . "<br>";
-					$imageManager->imageResize( $source, $destination, 183, 178, ZEBRA_IMAGE_CROP_CENTER );
+					$imageManager->imageResize( $source, $destination, 313, 235, ZEBRA_IMAGE_CROP_CENTER );
 					
 					// ---- Vignette
 					$destination = $_SERVER[ "DOCUMENT_ROOT" ] . '/photos/news/thumbs' . $filenameDest;
-					$imageManager->imageResize( $source, $destination, 170, 170, ZEBRA_IMAGE_CROP_CENTER );
+					$imageManager->imageResize( $source, $destination, 274, 136, ZEBRA_IMAGE_CROP_CENTER );
 					$_POST[ 'url' . $i ] = $filenameDest;
 				}
 			}

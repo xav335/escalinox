@@ -1,10 +1,10 @@
 	<div class="row fullwidth top-of-page">
 		<div class="row">
 			<div class="large-6 medium-6 small-12 columns top">
-				<img src="img/logo-escalinox.png" alt="ESC'Alinox" />
+				<img src="/img/logo-escalinox.png" alt="ESC'Alinox" />
 			</div>
 			<div class="large-6 medium-6 small-12 columns top">
-				<a href="<?=FACEBOOK_LINK?>" tagrget="_blank" class="facebook" title="Suivez-nous sur Facebook"></a> <a class="telephone">+33 5 57 50 25 56</a>
+				<a href="<?=FACEBOOK_LINK?>" target="_blank" class="facebook" title="Suivez-nous sur Facebook"></a> <a class="telephone">+33 5 57 50 25 56</a>
 			</div>
 		</div>
 	</div>
