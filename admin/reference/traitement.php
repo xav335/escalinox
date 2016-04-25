@@ -31,25 +31,6 @@
 		// ---- Gestion des références ---------------------------------------- //
 		if ( $_POST[ "mon_action" ] == "gerer" ) {
 			
-			// ---- Traitement de l'image ------------------- //
-			/*if ( $_POST[ "url1" ] != '' ) {
-				$source = $_SERVER[ "DOCUMENT_ROOT" ] . $_POST[ "url1" ];
-				if ( $debug ) echo "Source : " . $source . "<br>";
-				
-				if( strstr( $source, 'uploads' ) ) {
-					$source = $_SERVER[ "DOCUMENT_ROOT" ] . $_POST[ "url1" ];
-					$filenameDest = $imageManager->fileDestManagement( $source, $_POST[ "id" ] );
-					
-					// ---- Image -------- //
-					$destination = $_SERVER[ "DOCUMENT_ROOT" ] . '/photos/reference' . $filenameDest;
-					if ( $debug ) echo "Destination : " . $destination . "<br>";
-					$imageManager->imageResize( $source, $destination, 637, null, ZEBRA_IMAGE_CROP_CENTER );
-					
-					$_POST[ "image" ] = $filenameDest;
-				}
-			}*/
-			// ---------------------------------------------- //
-			
 			// ---- Traitement des données ------------------ //
 			if ( 1 == 1 ) {
 				$id = $reference->gererDonnees( $_POST, $debug );
@@ -90,8 +71,9 @@
 					
 					// ---- Cette référence a-t-elle une image par défaut?
 					if ( 1 == 1 ) {
-						$image_defaut = $reference_image->getImageDefaut( $id, $debug );
-						$has_imageDefaut = ( $image_defaut[ "fichier" ] != '' ) ? true : false;
+						$image_defaut = $reference_image->getImageDefaut( $id, "normale", $debug );
+						if ( $debug ) echo "Image par défaut : " . $image_defaut . "<br>";
+						$has_imageDefaut = ( $image_defaut != "http://www.placehold.it/1200x800/EFEFEF/171717&text=:(" ) ? true : false;
 					}
 					// ------------------------------------------------- //
 					

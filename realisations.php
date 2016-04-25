@@ -51,7 +51,7 @@
 					
 					echo "<div class='large-4 medium-4 small-12 columns' style='margin-bottom:20px;'>\n";
 					echo "	<center><h3>" . $titre . "</h3></center>\n";
-					echo "	<a href='/realisation_detail.php?id=" . $id . "'><img src='" . $image_defaut . "' alt=\"" . $titre . "\" /></a>\n";
+					echo "	<center><a href='/realisation_detail.php?id=" . $id . "'><img src='" . $image_defaut . "' alt=\"" . $titre . "\" /></a></center>\n";
 					echo "</div>\n";
 					
 					$cpt++;

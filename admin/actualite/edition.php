@@ -20,7 +20,7 @@
 			$titre= 		$result[ 0 ][ "titre" ];
 			$date_news= 	traitement_datetime_affiche( $result[ 0 ][ "date_news" ] );
 			$contenu= 		$result[ 0 ][ "contenu" ];
-			$online = ( $result[ 0 ][ "online" ]=='1' ) ? "checked" : '';
+			$accueil = ( $result[ 0 ][ "accueil" ]=='1' ) ? "checked" : '';
 			
 			for ( $i=1; $i<2; $i++ ) {
 				$image[ $i ] = $result[ 0 ][ "image" . $i ];
@@ -44,7 +44,7 @@
 		$titre= 			null;
 		$date_news= 		null;
 		$contenu= 			null;
-		$online = 			null;
+		$accueil = 			null;
 		for ( $i=1; $i<2; $i++ ) {
 			$img[ $i ] = 	'/img/homeactu.jpg';
 			$imgval[ $i ] = '';
@@ -72,13 +72,13 @@
 						<input type="hidden" name="id" id="id" value="<?=$id?>">
 						
 						<div class="form-group" >
-							<label class="col-sm-1">Date :</label>
+							<label class="col-sm-2">Date :</label>
 							<input class="col-sm-2" type="text" name="datepicker" id="datepicker" required value="<?=$date_news?>" >
 						</div>
 						
 						<div class="form-group" >
-							<label class="col-sm-1" for="titre">Titre :</label>
-							<input type="text" class="col-sm-11" name="titre" required value="<?=$titre?>">
+							<label class="col-sm-2" for="titre">Titre :</label>
+							<input type="text" class="col-sm-10" name="titre" required value="<?=$titre?>">
 						</div>
 						
 						<div class="form-group">
@@ -87,8 +87,8 @@
 						</div>
 						
 						<div class="form-group" >
-							<label class="col-sm-1" for="titre">En ligne :</label>
-							<input type="checkbox" name="online" <?=$online?>>
+							<label class="col-sm-2" for="titre">En page d'accueil :</label>
+							<input type="checkbox" name="accueil" <?=$accueil?>>
 						</div>
 						
 						<div class="form-group"><br>

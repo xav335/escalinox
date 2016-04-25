@@ -6,9 +6,9 @@ class News extends StorageManager {
 
 	}
 	
-	public function newsValidGet( $debug=false ){
+	public function newsList( $debug=false ){
 		$this->dbConnect();
-		$requete = "SELECT * FROM `news` WHERE online=1 ORDER BY `date_news` DESC" ;
+		$requete = "SELECT * FROM `news` ORDER BY `date_news` DESC" ;
 		if ( $debug ) echo $requete . "<br>";
 		
 		$new_array = null;
@@ -20,9 +20,22 @@ class News extends StorageManager {
 		return $new_array;
 	}
 	
+	public function newsValidGet( $debug=false ){
+		$this->dbConnect();
+		$requete = "SELECT * FROM `news` WHERE accueil=1 ORDER BY `date_news` DESC" ;
+		if ( $debug ) echo $requete . "<br>";
+		
+		$new_array = null;
+		$result = mysqli_query($this->mysqli,$requete);
+		while( $row = mysqli_fetch_assoc( $result)){
+			$new_array[] = $row;
+		}
+		$this->dbDisConnect();
+		return $new_array;
+	}
 	
 	public function newsGet( $id, $debug=false ){
-		 $this->dbConnect();
+		$this->dbConnect();
 		if ( !isset( $id ) || intval( $id ) <= 0 ) {
 			$requete = "SELECT * FROM `news` ORDER BY date_news DESC" ;
 		} 
@@ -40,20 +53,30 @@ class News extends StorageManager {
 		return $new_array;
 	}
 	
+	private function initNews( $debug=false ) {
+		$requete = "UPDATE `news` SET `accueil` = 0" ;
+		if ( $debug ) echo $requete . "<br>";
+		$result = mysqli_query( $this->mysqli, $requete );
+	}
+	
 	public function newsAdd( $value, $debug=false ) {
 		$this->dbConnect();
 		$this->begin();
 		
 		try {
-			($value['online']=='on') ? $online = 1 : $online = 0;
+			($value['accueil']=='on') ? $accueil = 1 : $accueil = 0;
+			
+			// ---- Initialisation de l'affichage en page d'accueil ------------------ //
+			if ( $accueil == 1 ) $this->initNews( $debug );
+			
 			$sql = "INSERT INTO  `news`
-				(`date_news`, `titre`, `image1`, `contenu`, `online`)
+				(`date_news`, `titre`, `image1`, `contenu`, `accueil`)
 				VALUES (
 				'". $this->inserer_date($value['datepicker']) ."', 
 				'". addslashes($value['titre']) ."',
 				'". addslashes($value['url1']) ."',
 				'". addslashes($value['contenu']) ."',
-				". $online ." 	
+				". $accueil ." 	
 			);";
 			
 			if ( $debug ) echo $sql . "<br>";
@@ -81,13 +104,17 @@ class News extends StorageManager {
 		$this->dbConnect();
 		$this->begin();
 		try {
-			($value['online']=='on') ? $online = 1 : $online = 0;
+			($value['accueil']=='on') ? $accueil = 1 : $accueil = 0;
+			
+			// ---- Initialisation de l'affichage en page d'accueil ------------------ //
+			if ( $accueil == 1 ) $this->initNews( $debug );
+			
 			$sql = "UPDATE  .`news` SET
 				`date_news`='". $this->inserer_date($value['datepicker']) ."', 
 				`titre`='". addslashes($value['titre']) ."', 
 				`image1`='". addslashes($value['url1']) ."',
 				`contenu`='". addslashes($value['contenu']) ."',
-				`online`=". $online ."		 
+				`accueil`=". $accueil ."		 
 				WHERE `id_news`=". $value['id'] .";";
 			
 			if ( $debug ) echo $sql . "<br>";

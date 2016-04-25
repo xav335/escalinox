@@ -140,6 +140,8 @@
 			        touchRatio: 0.2,
 			        slideToClickedSlide: true
 			    });
+			    galleryTop.params.control = galleryThumbs;
+	    		galleryThumbs.params.control = galleryTop;
 				
 			});
 			

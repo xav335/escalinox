@@ -42,33 +42,6 @@ INSERT INTO `admin` VALUES (1,'escalinox','escalinox33','administrateur'),(2,'ad
 UNLOCK TABLES;
 
 --
--- Table structure for table `catproduct`
---
-
-DROP TABLE IF EXISTS `catproduct`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `catproduct` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `id_parent` int(11) NOT NULL,
-  `nom` varchar(50) NOT NULL,
-  `image` varchar(50) NOT NULL,
-  `ordre_affichage` int(11) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `catproduct`
---
-
-LOCK TABLES `catproduct` WRITE;
-/*!40000 ALTER TABLE `catproduct` DISABLE KEYS */;
-INSERT INTO `catproduct` VALUES (41,0,'Aménagements bois','/_MG_5081-41.jpg',2),(43,0,'Aménagements modulaires','/_MG_5255-43.jpg',1),(50,43,'Bois de chène...','',1),(51,43,'Bois de l\'érable du coin','',2),(54,0,'Autres','',3);
-/*!40000 ALTER TABLE `catproduct` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `contact`
 --
 
@@ -191,7 +164,7 @@ CREATE TABLE `news` (
   `titre` varchar(250) NOT NULL,
   `contenu` text,
   `image1` varchar(250) DEFAULT NULL,
-  `online` tinyint(4) NOT NULL DEFAULT '0',
+  `accueil` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id_news`)
 ) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -202,7 +175,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
-INSERT INTO `news` VALUES (30,'2015-11-07','Nouveaux produits','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.','/20150812_163027-30.jpg',1),(31,'2015-11-22','Nouvelle réalisation Ensemble chaudronné',' Lòrem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque ut risus id aliquam. Duis dapibus rhoncus neque ac tempus. Nunc laoreet tincidunt libero, a fermentum lacus semper ac. Donec lobortis pretium urna euismod auctor. Duis ut mattis metus, ac ultricies eros. Etiam a porta purus, efficitur pulvinar nibh. Mauris a rutrum quam. In arcu leo, egestas vitae mi a, viverra finibus mauris. Nunc consectetur tellus at ligula pulvinar sodales efficitur quis est. Proin porttitor massa mauris, ut vulputate nulla malesuada sed. Mauris fermentum fermentum rhoncus. Nullam convallis at enim at placerat. Nulla ut augue tincidunt diam egestas luctus. Sed orci justo, pellentesque vel aliquet non, ornare id est. Donec dui sapien, varius eu lectus at, ullamcorper ornare nunc. Quisque a sollicitudin metus.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non blandit ligula, eu congue elit. Etiam tempor tortor non ante placerat placerat. Quisque convallis porttitor nisi, nec euismod velit sollicitudin at. Duis pretium ex sed enim consectetur, eu egestas diam vestibulum. Aliquam vulputate turpis et risus congue interdum. Fusce molestie, magna vel interdum volutpat, purus est lobortis erat, eget interdum lorem massa sed risus. Morbi justo dolor, convallis eget cursus eu, luctus eu lectus. Vestibulum mi risus, condimentum a nibh vel, imperdiet consectetur purus. Praesent vel ante erat. In hac habitasse platea dictumst. Aenean pellentesque enim nisi, vel varius justo fringilla in. Vestibulum scelerisque pretium dolor, vel pretium metus dapibus sed. Aenean gravida, erat quis tempus pulvinar, ligula odio imperdiet velit, in semper leo augue id neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;\r\n\r\nNam nec odio ut erat rutrum tempor. Etiam luctus, ante nec sodales lobortis, ipsum sapien ultricies orci, nec blandit odio nunc in ligula. Mauris a egestas turpis, a tristique libero. Proin aliquam ex ac feugiat pellentesque. Aliquam ac nibh sit amet nunc sodales tincidunt. Aenean nec facilisis tortor, porta iaculis dui. Aliquam id iaculis purus. Praesent id mi sed turpis eleifend interdum. Pellentesque ac fringilla ex. ','/Photo_4-31.jpg',1);
+INSERT INTO `news` VALUES (30,'2015-11-07','Nouveaux produits','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speci','/Photo_5-30.jpg',1),(31,'2015-11-22','Nouvelle réalisation Ensemble chaudronné',' Lòrem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque ut risus id aliquam. Duis dapibus rhoncus neque ac tempus. Nunc laoreet tincidunt libero, a fermentum lacus semper ac. Donec lobortis pretium urna euismod auctor. Duis ut mattis metus, ac ultricies eros. Etiam a porta purus, efficitur pulvinar nibh. Mauris a rutrum quam. In arcu leo, egestas vitae mi a, viverra finibus mauris. Nunc consectetur tellus at ligula pulvinar sodales efficitur quis est. Proin porttitor massa mauris, ut vulputate nulla malesuada sed. Mauris fermentum fermentum rhoncus. Nullam convallis at enim at placerat. Nulla ut augu','/Photo_4-31.jpg',0);
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -302,7 +275,7 @@ CREATE TABLE `reference_image` (
   `fichier` varchar(100) NOT NULL,
   `defaut` enum('oui','non') NOT NULL DEFAULT 'non',
   PRIMARY KEY (`num_image`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -311,7 +284,7 @@ CREATE TABLE `reference_image` (
 
 LOCK TABLES `reference_image` WRITE;
 /*!40000 ALTER TABLE `reference_image` DISABLE KEYS */;
-INSERT INTO `reference_image` VALUES (2,1,'/20150812_141201-1.jpg','non'),(3,1,'/354-1.jpg','non'),(4,1,'/96-1.jpg','oui'),(5,2,'/78-2.jpg','non'),(6,2,'/20150812_163027-2.jpg','oui'),(10,4,'/186-4.jpg','non'),(11,4,'/398 - Copy 1-4.jpg','oui'),(12,4,'/492-4.jpg','non'),(13,4,'/538-4.jpg','non'),(16,5,'/Photo_1-5.jpg','oui'),(18,5,'/Photo_3-5.jpg','non'),(19,5,'/Photo_2-5.jpg','non'),(20,3,'/Photo_4-3.jpg','oui'),(21,3,'/Photo_5-3.jpg','non'),(22,3,'/Photo_6-3.jpg','non');
+INSERT INTO `reference_image` VALUES (21,3,'/Photo_5-3.jpg','non'),(22,3,'/Photo_6-3.jpg','non'),(23,4,'/Photo_4-4.jpg','non'),(24,4,'/Photo_6-4.jpg','oui'),(25,1,'/Photo_2-1.jpg','non'),(26,1,'/Photo_5-1.jpg','oui'),(27,2,'/Photo_1-2.jpg','oui'),(28,5,'/Photo_1-5.jpg','oui'),(29,5,'/Photo_2-5.jpg','non'),(30,5,'/Photo_3-5.jpg','non'),(31,3,'/Photo_4-3.jpg','oui');
 /*!40000 ALTER TABLE `reference_image` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -324,4 +297,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-04-15 18:35:37
+-- Dump completed on 2016-04-25 12:33:09

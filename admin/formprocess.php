@@ -233,12 +233,17 @@
 					$source = $_SERVER[ "DOCUMENT_ROOT" ] . $_POST[ 'url' . $i ];
 					$filenameDest = $imageManager->fileDestManagement( $source, $_POST[ "id" ] );
 					
-					// ---- Image
-					$destination = $_SERVER[ "DOCUMENT_ROOT" ] . '/photos/news' . $filenameDest;
+					// ---- Image NORMALE
+					$destination = $_SERVER[ "DOCUMENT_ROOT" ] . '/photos/news/normale' . $filenameDest;
+					if ( $debug ) echo "Destination : " . $destination . "<br>";
+					$imageManager->imageResize( $source, $destination, 1200, 800, ZEBRA_IMAGE_CROP_CENTER );
+					
+					// ---- Image LISTE DES ACTUS
+					$destination = $_SERVER[ "DOCUMENT_ROOT" ] . '/photos/news/liste' . $filenameDest;
 					if ( $debug ) echo "Destination : " . $destination . "<br>";
 					$imageManager->imageResize( $source, $destination, 313, 235, ZEBRA_IMAGE_CROP_CENTER );
 					
-					// ---- Vignette
+					// ---- Vignette HOME
 					$destination = $_SERVER[ "DOCUMENT_ROOT" ] . '/photos/news/thumbs' . $filenameDest;
 					$imageManager->imageResize( $source, $destination, 274, 136, ZEBRA_IMAGE_CROP_CENTER );
 					$_POST[ 'url' . $i ] = $filenameDest;
@@ -259,7 +264,7 @@
 				
 			} 
 			
-			// ---- ajouter une news --------------------------------------------- //
+			// ---- Ajouter une news --------------------------------------------- //
 			else {
 				try {
 					$result = $news->newsAdd( $_POST );
