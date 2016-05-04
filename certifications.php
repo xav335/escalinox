@@ -14,31 +14,37 @@
 				Les certifications<br>
 				ESC'Alinox
 			</h1>
-			
 			<!-- Début Certification -->
 			<div class="row certification">
 				<div class="large-12 columns">
-					<h3>Certification #1</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit fugit voluptates sunt! Debitis, maxime, aspernatur, aperiam distinctio perspiciatis mollitia possimus cumque aut minus non tenetur vitae illo ea dicta!</p>
-					<p>In neque nibh, porttitor vel viverra eu, vestibulum id nibh. Fusce aliquam magna sed accumsan sodales. Quisque ullamcorper hendrerit est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+					<h3>Nous disposons de qualifications délivrée par l'Apave :</h3>
+					<p>- EN 287-1 141 T BW 8 S t1,6 et T3,2 D17 et D60,3 H-LO45 ss nb</p>
+					<p>- EN 287-1 141 T BW 1.1 S t1 et T5,6 D13 et D60,3 H-LO45 ss nb</p>
 				</div>
 			</div>
 			<!-- Fin Certification -->
 			<!-- Début Certification -->
 			<div class="row certification">
 				<div class="large-12 columns">
-					<h3>Certification #2</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit fugit voluptates sunt! Debitis, maxime, aspernatur, aperiam distinctio perspiciatis mollitia possimus cumque aut minus non tenetur vitae illo ea dicta!</p>
-					<p>In neque nibh, porttitor vel viverra eu, vestibulum id nibh. Fusce aliquam magna sed accumsan sodales. Quisque ullamcorper hendrerit est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-				</div>
+					<h3>suivant les normes :</h3>
+					<p>- NF EN ISO 9606-1 (EN 287-1)</p>
+					<p>- NF EN ISO 9606-2 (EN 287-2)</p>
+
+                        <p>- ATG B540-9 (NORME GAZ)</p>
+                        
+                        <p>- NF EN 14276-1 (GAZ FRIGORIGENES)</p>
+                 </div>
 			</div>
 			<!-- Fin Certification -->
 			<!-- Début Certification -->
 			<div class="row certification">
 				<div class="large-12 columns">
-					<h3>Certification #3</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit fugit voluptates sunt! Debitis, maxime, aspernatur, aperiam distinctio perspiciatis mollitia possimus cumque aut minus non tenetur vitae illo ea dicta!</p>
-					<p>In neque nibh, porttitor vel viverra eu, vestibulum id nibh. Fusce aliquam magna sed accumsan sodales. Quisque ullamcorper hendrerit est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+					<h3>Possibilités d'intervention :</h3>
+					<p>- soudure alimentaire, aéro, pharmaceutique</p>
+
+                    <p>- soudure pétro-chimie</p>
+
+                    <p>- soudure sur pipeline...</p>
 				</div>
 			</div>
 			<!-- Fin Certification -->
