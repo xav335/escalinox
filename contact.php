@@ -97,7 +97,7 @@
 				<p>SARL 520 929 365</p>
 				<p>11 Camparian-Nord<br/>33870 Vayres</p>
 				<p>Tél. +33 5 57 50 25 56</p>
-				<p>Email : contact(at)escalinox.fr</p>
+				<p>Email : contact@escalinox.fr</p>
 			</div>
 			
 			<div class="large-8 medium-6 small-12 columns">
@@ -144,7 +144,7 @@
 						<textarea name="message" id="message" placeholder="Votre message"></textarea>
 					</div>
 					<div class="large-12 medium-12 columns">
-						<input type="checkbox" name="newsletter" checked />&nbsp;Je souhaite m'inscrire sur la newsletter et ainsi recevoir vos offres spéciales.
+						<input type="checkbox" name="newsletter" checked />&nbsp;Je souhaite m'inscrire sur la newsletter.
 					</div>
 					<div class="large-12 columns">
 						<input type="submit" value="Envoyer" />

@@ -69,7 +69,7 @@
 							// ---- Affichage des vignettes ------------------ //
 							if ( !empty( $liste_image ) ) {
 								foreach ( $liste_image as $_image ) { 
-									echo "<div class='swiper-slide'><a href='/photos/reference/normale" . $_image[ "fichier" ] . "' class='fancybox photo-principale' rel='offre'><img src='/photos/reference/accueil" . $_image[ "fichier" ] . "' alt='' /></a></div>\n";
+									echo "<div class='swiper-slide'><a href='/photos/reference/normale" . $_image[ "fichier" ] . "' class='fancybox photo-principale' rel='offre'><img style='height:360px' src='/photos/reference/accueil" . $_image[ "fichier" ] . "' alt='' /></a></div>\n";
 								}
 							}
 							// ----------------------------------------------- //
@@ -77,9 +77,9 @@
 						
 						</div>
 						
-						<!-- Add Arrows -->
+						<!-- Add Arrows 
 						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-prev"></div> -->
 					</div>
 					<div class="gallery-thumbs">
 						<div class="swiper-wrapper">

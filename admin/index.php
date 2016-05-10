@@ -50,7 +50,7 @@
     						 <input type="text" class="form-control" name="login" id="login" placeholder="login" required>
 				  		</div>
 				  		<div class="form-group">
-				    		 <label for="mdp" class="control-label">Identifiants</label>
+				    		 <label for="mdp" class="control-label">Mot de passe</label>
     						 <input type="password" class="form-control" name="mdp" id="mdp" placeholder="mot de passe" required>
 				  		</div>
 				  		<button type="submit" class="btn btn-default">Validez</button>

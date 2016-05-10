@@ -28,16 +28,16 @@
 	// ---- Forms processing -------------------------------------------------- //
 	if ( $_POST[ "mon_action" ] != '' ) {
 		
-		// ---- Gestion des références ---------------------------------------- //
+		// ---- Gestion des rï¿½fï¿½rences ---------------------------------------- //
 		if ( $_POST[ "mon_action" ] == "gerer" ) {
 			
-			// ---- Traitement des données ------------------ //
+			// ---- Traitement des donnï¿½es ------------------ //
 			if ( 1 == 1 ) {
 				$id = $reference->gererDonnees( $_POST, $debug );
 			}
 			// ---------------------------------------------- //
 			
-			// ---- Gestion des images de la référence --------------------------- //
+			// ---- Gestion des images de la rï¿½fï¿½rence --------------------------- //
 			if ( !empty( $_POST[ "mes_images" ] ) ) {
 				//print_pre( $_POST[ "mes_images" ] );
 				
@@ -49,7 +49,7 @@
 					$filenameDest = $imageManager->fileDestManagement( $source, $id );
 					if ( $debug ) echo "--- filenameDest : " . $filenameDest . "<br>";
 					
-					// ---- Création des différentes images ------------ //
+					// ---- Crï¿½ation des diffï¿½rentes images ------------ //
 					if ( 1 == 1 ) {
 						
 						// ---- Image de taille "normale" ---- //
@@ -60,7 +60,7 @@
 						// ---- Image de taille "accueil" ---- //
 						$destination = $_SERVER['DOCUMENT_ROOT'] . '/photos/reference/accueil' . $filenameDest;
 						if ( $debug ) echo "--- destination : " . $destination . "<br>";
-						$imageManager->imageResize( $source, $destination, 303, 227, null );
+						$imageManager->imageResize( $source, $destination, 485, 363, null );
 						
 						// ---- Image de taille "vignette" --- //
 						$destination = $_SERVER['DOCUMENT_ROOT'] . '/photos/reference/vignette' . $filenameDest;
@@ -69,10 +69,10 @@
 					}
 					// ------------------------------------------------- //
 					
-					// ---- Cette référence a-t-elle une image par défaut?
+					// ---- Cette rï¿½fï¿½rence a-t-elle une image par dï¿½faut?
 					if ( 1 == 1 ) {
 						$image_defaut = $reference_image->getImageDefaut( $id, "normale", $debug );
-						if ( $debug ) echo "Image par défaut : " . $image_defaut . "<br>";
+						if ( $debug ) echo "Image par dï¿½faut : " . $image_defaut . "<br>";
 						$has_imageDefaut = ( $image_defaut != "http://www.placehold.it/1200x800/EFEFEF/171717&text=:(" ) ? true : false;
 					}
 					// ------------------------------------------------- //
@@ -110,7 +110,7 @@
 			}
 			// ------------------------------------------------------------------- //
 				
-			// ---- Redirection après traitement ------------ //
+			// ---- Redirection aprï¿½s traitement ------------ //
 			if ( 1 == 1 ) {
 				
 				// ---- Modification... ---- //
@@ -128,7 +128,7 @@
 		} 
 		// ------------------------------------------------------------------------ //
 		
-		// ---- Définition d'une image par défaut --------------------------------- //
+		// ---- Dï¿½finition d'une image par dï¿½faut --------------------------------- //
 		if ( $_POST[ "mon_action" ] == "par defaut" ) {
 			
 			// ---- Liste des autres images de l'offre ---- //
@@ -136,7 +136,7 @@
 			$recherche[ "num_reference" ] = $_POST[ "id" ];
 			$liste_image = $reference_image->getListe( $recherche, $debug );
 			
-			// ---- On passe toutes les autres à "non" ---- //
+			// ---- On passe toutes les autres ï¿½ "non" ---- //
 			if ( !empty( $liste_image ) ) {
 				foreach( $liste_image as $_image ) {
 					$reference_image->setChamp( "defaut", 'non', $_image[ "num_image" ], $debug );
