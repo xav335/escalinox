@@ -54,6 +54,14 @@
 			<hr>
 
 		</div>
+		<div class="large-12 columns">
+
+			<h3>Découpeur Plasma Hypertherm powermax 45</h3>
+			
+			<img alt="" src="img/DecoupeurPlasma.jpg">
+			<hr>
+
+		</div>
 
 	</div>
 	
