@@ -113,3 +113,32 @@ p {font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;text-a
 #map-canvas {background:#fff;width:100%;height:400px;}
 
 .photos {margin:15px 0;display:block;}
+
+
+/* Responsive */
+@media only screen and (max-width: 48.063em) {
+	
+}
+@media only screen and (max-width: 40.063em) {
+.homeactu {display:none;}
+.top-of-page .row .columns:last-child {
+    padding-top: 10px;
+    padding-bottom: 18px;}
+
+.contenu {
+    padding-left: 5px;
+    padding-right: 5px;}
+		
+}
+@media only screen and (max-width: 20.063em) {
+.homeactu {display:none;}
+.top-of-page .row .columns:last-child {
+    padding-top: 10px;
+    padding-bottom: 18px;}
+
+.contenu {
+    padding-left: 5px;
+    padding-right: 5px;}	
+}
+/* Fin Responsive */
+
