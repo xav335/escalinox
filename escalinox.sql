@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.6.21, for osx10.6 (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.38, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: escalinox
 -- ------------------------------------------------------
--- Server version	5.6.21
+-- Server version	5.5.38-0+wheezy1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -175,7 +175,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
-INSERT INTO `news` VALUES (30,'2015-11-07','Nouveaux produits','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speci','/Photo_5-30.jpg',1),(31,'2015-11-22','Nouvelle réalisation Ensemble chaudronné',' Lòrem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque ut risus id aliquam. Duis dapibus rhoncus neque ac tempus. Nunc laoreet tincidunt libero, a fermentum lacus semper ac. Donec lobortis pretium urna euismod auctor. Duis ut mattis metus, ac ultricies eros. Etiam a porta purus, efficitur pulvinar nibh. Mauris a rutrum quam. In arcu leo, egestas vitae mi a, viverra finibus mauris. Nunc consectetur tellus at ligula pulvinar sodales efficitur quis est. Proin porttitor massa mauris, ut vulputate nulla malesuada sed. Mauris fermentum fermentum rhoncus. Nullam convallis at enim at placerat. Nulla ut augu','/Photo_4-31.jpg',0);
+INSERT INTO `news` VALUES (30,'2015-11-07','Nouveaux produits','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speci','/Photo_5-30.jpg',0),(31,'2015-11-22','Nouvelle réalisation Ensemble chaudronné',' Lòrem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque ut risus id aliquam. Duis dapibus rhoncus neque ac tempus. Nunc laoreet tincidunt libero, a fermentum lacus semper ac. Donec lobortis pretium urna euismod auctor. Duis ut mattis metus, ac ultricies eros. Etiam a porta purus, efficitur pulvinar nibh. Mauris a rutrum quam. In arcu leo, egestas vitae mi a, viverra finibus mauris. Nunc consectetur tellus at ligula pulvinar sodales efficitur quis est. Proin porttitor massa mauris, ut vulputate nulla malesuada sed. Mauris fermentum fermentum rhoncus. Nullam convallis at enim at placerat. Nulla ut augu','/Photo_4-31.jpg',1);
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -249,7 +249,7 @@ CREATE TABLE `reference` (
   `accueil` enum('0','1') NOT NULL DEFAULT '0',
   `online` enum('0','1') NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -258,7 +258,7 @@ CREATE TABLE `reference` (
 
 LOCK TABLES `reference` WRITE;
 /*!40000 ALTER TABLE `reference` DISABLE KEYS */;
-INSERT INTO `reference` VALUES (1,'mon titre','mon titre accueil','description...','/rib-1.pdf','0','1'),(2,'Nouvelle Ref','Ref titre',' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet velit blandit, gravida mauris quis, viverra elit. Proin dictum mollis mauris eget rutrum. Fusce luctus pharetra nisi ac luctus. Nulla posuere felis vitae nisl varius imperdiet. Praesent elementum consequat sapien, quis tincidunt quam cursus id. Duis in est blandit, gravida ligula nec, rutrum mi. Quisque sagittis semper erat, nec congue metus volutpat eget. Vestibulum neque risus, tristique id porta vel, fringilla eu mi. Sed blandit eleifend ante sit amet eleifend. Sed id lectus sed enim ultricies pretium vel at nisl.\r\n\r\nNam tempus ipsum ac leo elementum, et interdum sapien sollicitudin. Etiam mauris arcu, laoreet sed volutpat ut, sagittis ac ex. Quisque eu auctor nibh, id euismod nisi. Mauris interdum, enim eu dictum posuere, eros lorem pulvinar nulla, condimentum ultrices mauris nisl vitae nulla. Sed imperdiet condimentum massa tempus sodales. Suspendisse consequat purus ac dignissim euismod. Aliquam a metus purus. Sed egestas magna urna. Aenean non ligula lorem. Pellentesque dignissim velit vitae rutrum feugiat. Aenean convallis metus vel pharetra rhoncus. Donec viverra sem quis mauris pretium, id maximus arcu finibus.\r\n\r\nNunc at lacus non felis mollis mollis et fringilla libero. Maecenas facilisis in turpis rutrum feugiat. Pellentesque et dolor eget nibh finibus maximus. Donec cursus leo in odio tristique, a lacinia odio convallis. Cras ornare risus id mattis bibendum. Duis ullamcorper magna luctus justo eleifend, sed imperdiet sapien convallis. Sed consequat mollis ante, auctor ullamcorper purus imperdiet a. Etiam eu ultrices quam. Morbi fermentum lectus et auctor dignissim. Cras mattis risus id tortor lobortis, et fermentum sem tincidunt. ','','0','1'),(3,'Ensemble chaudronné','Ensemble chaudronné 2','Réalisation d\'un ensemble chaudronné comportant deux trémies ainsi qu\'un conduit avec brides soudés','','0','1'),(4,'L\'ultime','L\'ultime test',' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet velit blandit, gravida mauris quis, viverra elit. Proin dictum mollis mauris eget rutrum. Fusce luctus pharetra nisi ac luctus. Nulla posuere felis vitae nisl varius imperdiet. Praesent elementum consequat sapien, quis tincidunt quam cursus id. Duis in est blandit, gravida ligula nec, rutrum mi. Quisque sagittis semper erat, nec congue metus volutpat eget. Vestibulum neque risus, tristique id porta vel, fringilla eu mi. Sed blandit eleifend ante sit amet eleifend. Sed id lectus sed enim ultricies pretium vel at nisl.\r\n\r\nNam tempus ipsum ac leo elementum, et interdum sapien sollicitudin. Etiam mauris arcu, laoreet sed volutpat ut, sagittis ac ex. Quisque eu auctor nibh, id euismod nisi. Mauris interdum, enim eu dictum posuere, eros lorem pulvinar nulla, condimentum ultrices mauris nisl vitae nulla. Sed imperdiet condimentum massa tempus sodales. Suspendisse consequat purus ac dignissim euismod. Aliquam a metus purus. Sed egestas magna urna. Aenean non ligula lorem. Pellentesque dignissim velit vitae rutrum feugiat. Aenean convallis metus vel pharetra rhoncus. Donec viverra sem quis mauris pretium, id maximus arcu finibus. ','','0','1'),(5,'Plateforme de travail pour une industrie alimentaire','Plateforme de travail ','Réalisation d\'une plateforme de travail en aluminium et de trémies inox 304 L déversant du sucre','','0','1');
+INSERT INTO `reference` VALUES (1,'Plateforme de travail inox pour chai de vin','Plateforme de travail inox pour chai de vin','Réalisation d\'une plateforme de travail en inox 316L et caillebotis galvanisés.\r\nLa main courante est alimentée en eau.\r\nChaque cheminée de citerne dispose d\'une vanne d\'alimentation permettant un nettoyage pratique de celle ci.\r\nLes vannes d\'alimentation sont directement soudées sur la main courante.','','0','1'),(2,'Coursive en acier galvanisé et platelage en bois','coursive en acier galvanisé et platelage en bois','Réalisation d\'une coursive en acier galvanisé et garde corps sur un projet de rénovation.\r\nRéalisation d\'une verrière d\'atelier effet rouille de type ancien avec une fenêtre faisant office de passe plats.','','0','1'),(3,' Ensemble chaudronné',' Ensemble chaudronné ','Réalisation d\'un ensemble chaudronné comportant deux trémies ainsi qu\'un conduit avec brides soudés','','0','1'),(5,'Plateforme de travail pour une industrie alimentaire','Plateforme de travail ','Réalisation d\'une plateforme de travail en aluminium et de trémies inox 304 L déversant du sucre','','0','1'),(6,'Borne multiservices','Borne multiservices','Réalisation de bornes multiservices en petites ou grandes séries.','','0','1');
 /*!40000 ALTER TABLE `reference` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -275,7 +275,7 @@ CREATE TABLE `reference_image` (
   `fichier` varchar(100) NOT NULL,
   `defaut` enum('oui','non') NOT NULL DEFAULT 'non',
   PRIMARY KEY (`num_image`)
-) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=65 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -284,7 +284,7 @@ CREATE TABLE `reference_image` (
 
 LOCK TABLES `reference_image` WRITE;
 /*!40000 ALTER TABLE `reference_image` DISABLE KEYS */;
-INSERT INTO `reference_image` VALUES (23,4,'/Photo_4-4.jpg','non'),(24,4,'/Photo_6-4.jpg','oui'),(25,1,'/Photo_2-1.jpg','non'),(26,1,'/Photo_5-1.jpg','oui'),(27,2,'/Photo_1-2.jpg','oui'),(38,3,'/Photo_4-3.jpg','oui'),(39,3,'/Photo_5-3.jpg','non'),(40,3,'/Photo_6-3.jpg','non'),(41,5,'/Photo_1-5.jpg','non'),(42,5,'/Photo_2-5.jpg','oui'),(43,5,'/Photo_3-5.jpg','non'),(44,5,'/Photo_4-5.jpg','non'),(46,5,'/Photo_6-5.jpg','non');
+INSERT INTO `reference_image` VALUES (23,4,'/Photo_4-4.jpg','non'),(24,4,'/Photo_6-4.jpg','oui'),(38,3,'/Photo_4-3.jpg','oui'),(39,3,'/Photo_5-3.jpg','non'),(40,3,'/Photo_6-3.jpg','non'),(41,5,'/Photo_1-5.jpg','oui'),(42,5,'/Photo_2-5.jpg','non'),(43,5,'/Photo_3-5.jpg','non'),(47,1,'/PHOTO_MANU_303-1.jpg','non'),(48,1,'/DSC00959-1.jpg','oui'),(49,1,'/DSC00956-1.jpg','non'),(50,1,'/DSC00969-1.jpg','non'),(51,1,'/DSC00966-1.jpg','non'),(52,1,'/DSC00965-1.jpg','non'),(53,1,'/DSC00963-1.jpg','non'),(54,1,'/DSC00973-1.jpg','non'),(55,2,'/P1010828-2.jpg','non'),(56,2,'/P1010829-2.jpg','non'),(57,2,'/P1010830-2.jpg','oui'),(58,2,'/P1010835-2.jpg','non'),(59,2,'/P1010840-2.jpg','non'),(60,2,'/P1020113-2.jpg','non'),(61,6,'/P1040568-6.jpg','oui'),(62,6,'/P1040569-6.jpg','non'),(63,6,'/P1040570-6.jpg','non'),(64,6,'/P1040571-6.jpg','non');
 /*!40000 ALTER TABLE `reference_image` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -297,4 +297,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-05-10 13:38:47
+-- Dump completed on 2016-05-27 18:14:16
