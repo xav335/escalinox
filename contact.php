@@ -97,7 +97,7 @@
 				<p>SARL 520 929 365</p>
 				<p>11 Camparian-Nord<br/>33870 Vayres</p>
 				<p>Tél. +33 5 57 50 25 56</p>
-				<p>Email : contact@escalinox.fr</p>
+				<p>Email :  <a href="mailto:escalinox.m@orange.fr">escalinox.m@orange.fr</a></p>
 			</div>
 			
 			<div class="large-8 medium-6 small-12 columns">
@@ -143,17 +143,17 @@
 					<div class="large-12 columns">
 						<textarea name="message" id="message" placeholder="Votre message"></textarea>
 					</div>
-					<div class="large-12 medium-12 columns">
+					<!--  <div class="large-12 medium-12 columns">
 						<input type="checkbox" name="newsletter" checked />&nbsp;Je souhaite m'inscrire sur la newsletter.
-					</div>
+					</div>-->
 					<div class="large-12 columns">
 						<input type="submit" value="Envoyer" />
 					</div>
-					<div class="large-12 columns">
+					<!-- <div class="large-12 columns">
 						<p class="rouge">
 							Conformément à la loi Informatique et Libertés en date du 6 janvier 1978, vous disposez d'un droit d'accès, de rectification, de modification et de suppression des données qui vous concernent. Vous pouvez exercer ce droit en nous envoyant un courrier électronique ou postal.
 						</p>
-					</div>
+					</div> -->
 				</form>
 			</div>
 			
