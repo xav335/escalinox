@@ -23,7 +23,7 @@
 			break;
 		
 		// ---- Serveur PROD ---------------- //
-		case "/var/www/escalinox" :
+		case "/var/www/escalinox.fr" :
 			$localhost = "localhost";
 			$dbname = "escalinox";
 			$user = "escalinox";

@@ -34,22 +34,9 @@
 		<div class="row">
 			<div class="col-md-8">
 				<h3>Statistiques</h3>
-				<iframe id="laframe" src="http://www.iconeo.fr/awstats/awstats.pl?config=www.votreimmopro.com&framename=mainright" style="width:720px;height:500px;" frameborder="1" ></iframe>
+				<iframe id="laframe" src="http://www.iconeo.fr/awstats/awstats.pl?config=www.escalinox.fr&framename=mainright" style="width:720px;height:500px;" frameborder="1" ></iframe>
 			</div>
 			<div class="col-md-4">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">Message du livre d'or à valider</h3>
-					</div>
-					<div class="panel-body">
-						<p>
-							<?php echo $message ?>
-						</p>
-						<p>
-							<a class="btn btn-success pull-right" href="/admin/livre_dor/liste.php">Modifier</a>
-						</p>
-					</div>
-				</div>
 			</div>
 		</div>	
 			
