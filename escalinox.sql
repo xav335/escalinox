@@ -175,7 +175,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
-INSERT INTO `news` VALUES (30,'2015-11-07','Nouveaux produits','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speci','/Photo_5-30.jpg',0),(31,'2015-11-22','Nouvelle réalisation Ensemble chaudronné',' Lòrem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque ut risus id aliquam. Duis dapibus rhoncus neque ac tempus. Nunc laoreet tincidunt libero, a fermentum lacus semper ac. Donec lobortis pretium urna euismod auctor. Duis ut mattis metus, ac ultricies eros. Etiam a porta purus, efficitur pulvinar nibh. Mauris a rutrum quam. In arcu leo, egestas vitae mi a, viverra finibus mauris. Nunc consectetur tellus at ligula pulvinar sodales efficitur quis est. Proin porttitor massa mauris, ut vulputate nulla malesuada sed. Mauris fermentum fermentum rhoncus. Nullam convallis at enim at placerat. Nulla ut augu','/Photo_4-31.jpg',1);
+INSERT INTO `news` VALUES (31,'2016-05-27','Découvrez notre nouveau site internet','Bienvenue sur notre nouveau site internet.\r\n\r\nVous pourrez y découvrir la présentation de notre entreprise et notre savoir faire.\r\nToutes nos réalisations n\'apparaissent pas sur le site.\r\nN\'hésitez pas à nous contacter pour toutes demandes particulières.\r\n\r\nBonne navigation à tous','/www-31.jpg',1);
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -258,7 +258,7 @@ CREATE TABLE `reference` (
 
 LOCK TABLES `reference` WRITE;
 /*!40000 ALTER TABLE `reference` DISABLE KEYS */;
-INSERT INTO `reference` VALUES (1,'Plateforme de travail inox pour chai de vin','Plateforme de travail inox pour chai de vin','Réalisation d\'une plateforme de travail en inox 316L et caillebotis galvanisés.\r\nLa main courante est alimentée en eau.\r\nChaque cheminée de citerne dispose d\'une vanne d\'alimentation permettant un nettoyage pratique de celle ci.\r\nLes vannes d\'alimentation sont directement soudées sur la main courante.','','0','1'),(2,'Coursive en acier galvanisé et platelage en bois','coursive en acier galvanisé et platelage en bois','Réalisation d\'une coursive en acier galvanisé et garde corps sur un projet de rénovation.\r\nRéalisation d\'une verrière d\'atelier effet rouille de type ancien avec une fenêtre faisant office de passe plats.','','0','1'),(3,' Ensemble chaudronné',' Ensemble chaudronné ','Réalisation d\'un ensemble chaudronné comportant deux trémies ainsi qu\'un conduit avec brides soudés','','0','1'),(5,'Plateforme de travail pour une industrie alimentaire','Plateforme de travail ','Réalisation d\'une plateforme de travail en aluminium et de trémies inox 304 L déversant du sucre','','0','1'),(6,'Borne multiservices','Borne multiservices','Réalisation de bornes multiservices en petites ou grandes séries.','','0','1');
+INSERT INTO `reference` VALUES (1,'   Plateforme de travail inox pour chai de vin','   Plateforme de travail inox pour chai de vin','Réalisation d\'une plateforme de travail en inox 316L et caillebotis galvanisés.\r\nLa main courante est alimentée en eau.\r\nChaque cheminée de citerne dispose d\'une vanne d\'alimentation permettant un nettoyage pratique de celle ci.\r\nLes vannes d\'alimentation sont directement soudées sur la main courante.','','0','1'),(2,'  Coursive en acier galvanisé et platelage en bois','  Coursive en acier galvanisé et platelage en bois','Réalisation d\'une coursive en acier galvanisé et garde corps sur un projet de rénovation.\r\nRéalisation d\'une verrière d\'atelier effet rouille de type ancien avec une fenêtre faisant office de passe plats.','','0','1'),(3,'    Ensemble chaudronné','    Ensemble chaudronné ','Réalisation d\'un ensemble chaudronné comportant deux trémies ainsi qu\'un conduit avec brides soudés','','0','1'),(5,'Plateforme de travail pour une industrie alimentaire','Plateforme de travail ','Réalisation d\'une plateforme de travail en aluminium et de trémies inox 304 L déversant du sucre','','0','1'),(6,'Borne multiservices','Borne multiservices','Réalisation de bornes multiservices en petites ou grandes séries.','','0','1');
 /*!40000 ALTER TABLE `reference` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -297,4 +297,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-05-27 18:14:16
+-- Dump completed on 2016-06-01 16:36:17
