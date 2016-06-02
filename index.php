@@ -44,7 +44,7 @@
 <!doctype html>
 <html class="no-js" lang="fr">
 	<head>
-		<title>ESC'Alinox</title>
+		<title>ESC'Alinox - Chaudronnerie - Soudure</title>
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/header.php" ); ?>
 	</head>
 	
