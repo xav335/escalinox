@@ -10,7 +10,7 @@
 				<p>
 					Tél. +33 5 57 50 25 56
 				</p>
-				<p>Email : <a href="mailto:escalinox.m@orange.fr">escalinox.m@orange.fr</a></p>
+				<p>Email : <a href="mailto:escalinox.m@orange.fr">contact@escalinox.fr</a></p>
 			</div>
 			<div id="map-canvas"></div>
 		</div>

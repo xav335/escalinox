@@ -44,6 +44,13 @@
 					icon: 'img/marker.png',
 					title: "ESC'ALINOX"
 				});
+				 marker.addListener('click', function() {
+					 //window.location.href = 'http://tinyurl.com/zsf4gqo';
+					 window.open('http://tinyurl.com/zsf4gqo','_blank');
+				 });
+				
+			     
+				
 			
 				var mapStyles = [
 				  {
