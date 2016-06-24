@@ -97,7 +97,7 @@
 				<p>SARL 520 929 365</p>
 				<p>11 Camparian-Nord<br/>33870 Vayres</p>
 				<p>Tél. +33 5 57 50 25 56</p>
-				<p>Email :  <a href="mailto:escalinox.m@orange.fr">escalinox.m@orange.fr</a></p>
+				<p>Email :  <a href="mailto:contact@escalinox.fr">contact@escalinox.fr</a></p>
 			</div>
 			
 			<div class="large-8 medium-6 small-12 columns">
