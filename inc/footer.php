@@ -17,7 +17,7 @@
 		<div class="large-12 columns">
 			<form id="form_news" action="" method="post">
 				<input type="hidden" name="as" value="" />
-				<a href="<?=FACEBOOK_LINK?>" target="_blank" class="facebook" title="Suivez-nous sur Facebook"></a>
+				<a href="<? echo "https://www.facebook.com/Escalinox-247500082282845"?>" target="_blank" class="facebook" title="Suivez-nous sur Facebook"></a>
 			</form>
 		</div>
 	</div>

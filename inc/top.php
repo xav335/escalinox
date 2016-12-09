@@ -14,7 +14,7 @@
 				<img src="/img/logo-escalinox.png" alt="ESC'Alinox" />
 			</div>
 			<div class="large-6 medium-6 small-12 columns top">
-				<a href="<?=FACEBOOK_LINK?>" target="_blank" class="facebook" title="Suivez-nous sur Facebook"></a> <a class="telephone">+33 5 57 50 25 56</a>
+				<a href="<? echo "https://www.facebook.com/Escalinox-247500082282845" ?>" target="_blank" class="facebook" title="Suivez-nous sur Facebook"></a> <a class="telephone">+33 5 57 50 25 56</a>
 			</div>
 		</div>
 	</div>
