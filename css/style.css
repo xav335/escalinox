@@ -18,6 +18,7 @@ p {font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;text-a
 
 .top {padding:40px 0;}
 
+.mapClick {background:url('../img/map.jpg') no-repeat; background-size:cover; height: 500px;}
 .top-of-page {background:url('/img/motif-top.png');}
 .top-of-page .row {max-width:62.5rem;margin:0 auto;}
 .top-of-page .row .columns:last-child {padding-top:140px;padding-bottom:18px;}
@@ -98,7 +99,7 @@ p {font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;text-a
 }
 .footer {background:#1d1d1d;margin-top:90px;}
 .footer .columns:first-child {position:relative;padding:0;}
-.footer .infos {position:absolute;background:rgba(255,255,255,0.8);z-index:9999;top:60px;left:50%;margin-left:200px;width:320px;padding:20px 35px;color:#333;line-height:14px;}
+.footer .infos {position:absolute;background:rgba(255,255,255,0.8);z-index:9999;top:60px;left:60%;margin-left:200px;width:320px;padding:20px 35px;color:#333;line-height:14px;}
 .footer .infos h3 {color:#333;margin-bottom:0;}
 .footer .infos p:first-child {margin-top:0;padding-top:0;}
 .footer .infos p:last-child {margin-bottom:0;}

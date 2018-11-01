@@ -12,7 +12,9 @@
 				</p>
 				<p>Email : <a href="mailto:escalinox.m@orange.fr">contact@escalinox.fr</a></p>
 			</div>
-			<div id="map-canvas"></div>
+			<div class="mapClick" onclick="javascript:document.location.href='http://tinyurl.com/zsf4gqo'">
+			
+			</div>
 		</div>
 		<div class="large-12 columns">
 			<form id="form_news" action="" method="post">
