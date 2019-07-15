@@ -1,3 +1,4 @@
+<? include_once ( $_SERVER[ "DOCUMENT_ROOT" ] . "/admin/inc-auth-granted.php" );?>
 <?php
 /*
   RoxyFileman - web based file manager. Ready to use with CKEditor, TinyMCE. 

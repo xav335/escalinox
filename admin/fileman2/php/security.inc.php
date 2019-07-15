@@ -21,6 +21,10 @@
   Contact: Lyubomir Arsov, liubo (at) web-lobby.com
 */
 function checkAccess($action){
+    
+    if (!isset($_SESSION['accessGranted']) || !$_SESSION['accessGranted']) {
+        exit();
+    }
   if(!session_id())
     session_start();
 }
